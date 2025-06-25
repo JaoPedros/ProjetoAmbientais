@@ -1,0 +1,196 @@
+/* Reset e estrutura básica */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: 'Inter', sans-serif;
+  background-color: #deffca;
+  color: #1b5e20;
+}
+
+/* Cabeçalho principal */
+.main-header {
+  background-color: #a0cfa0;
+  height: 80px;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-icon {
+  width: 40px;
+  margin-right: 10px;
+}
+
+.logo-text {
+  height: 40px;
+}
+
+.header-buttons a {
+  color: white;
+  text-decoration: none;
+  border: 2px solid white;
+  padding: 6px 12px;
+  border-radius: 6px;
+  margin-left: 15px;
+  font-weight: 600;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.header-buttons a:hover {
+  background-color: white;
+  color: #48c078;
+}
+
+/* Container central */
+.container {
+  max-width: 700px;
+  margin: 40px auto 60px;
+  padding: 0 20px;
+}
+
+/* Título */
+h2 {
+  font-size: 1.8rem;
+  margin-bottom: 25px;
+  color: #1b5e20;
+}
+
+/* Formulário */
+.form-noticia label {
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.form-noticia input[type="text"],
+.form-noticia textarea,
+.form-noticia input[type="file"] {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #a0cfa0;
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: #ffffff;
+  color: #333;
+  resize: vertical;
+}
+
+textarea#noticia {
+  height: 300px;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Botões de formatação */
+.format-buttons {
+  margin-bottom: 10px;
+}
+
+.format-buttons button {
+  background-color: #c8e6c9;
+  border: 1px solid #8bc34a;
+  color: #1b5e20;
+  padding: 6px 10px;
+  font-size: 0.9rem;
+  border-radius: 5px;
+  margin-right: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.format-buttons button:hover {
+  background-color: #aed581;
+}
+
+/* Botões do formulário */
+.botoes {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.btn-salvar {
+  background-color: #48c078;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-weight: 600;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-salvar:hover {
+  background-color: #36965a;
+}
+
+.btn-cancelar {
+  background-color: #a0cfa0;
+  color: #1b5e20;
+  text-decoration: none;
+  padding: 10px 20px;
+  font-weight: 600;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-cancelar:hover {
+  background-color: #8cc48c;
+  color: #145214;
+}
+
+.btn-limpar {
+  background-color: #c62828;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-weight: 600;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-limpar:hover {
+  background-color: #9e1f1f;
+}
+
+/* Mensagem de erro */
+.mensagem-erro {
+  background-color: #ffcdd2;
+  color: #b71c1c;
+  border: 1px solid #f44336;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+/* Rodapé */
+.main-footer {
+  background-color: #a0cfa0;
+  color: white;
+  text-align: center;
+  padding: 15px 10px;
+  font-size: 0.9rem;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.main-footer .creators {
+  display: block;
+  font-size: 0.85rem;
+  margin-top: 4px;
+}

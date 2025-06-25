@@ -1,0 +1,289 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #deffca; /* Verde claro ecológico */
+    color: #222;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Cabeçalho igual ao portal, altura fixa 80px */
+.main-header {
+  background: #a0cfa0;
+  height: 80px;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between; /* Logo à esquerda, botões à direita */
+  align-items: center;            /* Centraliza verticalmente */
+  color: white;
+  box-sizing: border-box;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-icon {
+  width: 40px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.logo-text {
+  height: 40px;
+}
+
+/* Botões do topo */
+.header-buttons {
+  display: flex;
+  align-items: center;
+}
+
+.header-buttons a {
+  color: white;
+  text-decoration: none;
+  border: 2px solid white;
+  padding: 6px 12px;
+  border-radius: 5px;
+  margin-left: 15px;
+  font-weight: 600;
+  transition: background-color 0.3s, color 0.3s;
+  margin-top: -3px;
+}
+
+.header-buttons a:hover {
+  background-color: white;
+  color: #48c078;
+}
+
+/* Conteúdo principal e layout flexível com sidebar */
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+
+    /* Flex container para conteúdo principal + sidebar */
+    display: flex;
+    gap: 20px;
+}
+
+/* Conteúdo principal ocupa maior parte */
+.conteudo-principal {
+    flex: 3;
+}
+
+/* Sidebar lateral */
+.sidebar-noticias {
+    flex: 1;
+    border-left: 2px solid #ddd;
+    padding-left: 20px;
+}
+
+.sidebar-noticias h3 {
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+    border-bottom: 2px solid #2e7d32;
+    padding-bottom: 5px;
+}
+
+.sidebar-noticias ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar-noticias li {
+    margin-bottom: 15px;
+}
+
+.sidebar-noticias a {
+    text-decoration: none;
+    color: #2e7d32;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.sidebar-noticias a:hover {
+    text-decoration: underline;
+    color: #145214;
+}
+
+/* Imagem principal */
+.container img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    margin: 20px 0;
+    border-radius: 6px;
+}
+
+/* Texto do container */
+.container h1 {
+    font-size: 2rem;
+    color: #2e7d32;
+    margin-bottom: 10px;
+}
+
+.container p {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+
+/* Botão voltar */
+.btn-outline {
+    display: inline-block;
+    text-decoration: none;
+    border: 2px solid #2e7d32;
+    padding: 10px 16px;
+    color: #2e7d32;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+}
+
+.btn-outline:hover {
+    background-color: #2e7d32;
+    color: #fff;
+}
+
+/* Rodapé */
+footer.main-footer {
+  background-color: #a0cfa0;
+  color: white;
+  text-align: center;
+  padding: 15px 10px;
+  font-size: 0.9rem;
+  margin-top: auto;
+}
+
+.main-footer .creators {
+  font-style: italic;
+  font-size: 0.8rem;
+  opacity: 0.8;
+  margin-top: 5px;
+}
+
+/* Responsividade para dispositivos menores */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        max-width: 95%;
+    }
+    .sidebar-noticias {
+        border-left: none;
+        padding-left: 0;
+        margin-top: 40px;
+    }
+}
+
+/* Ícone login (se usar) */
+.icon-login {
+  width: 100px;
+  height: 100px;
+  margin-bottom: -10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -10px;
+}
+
+/* --- Estilos dos comentários --- */
+#comentarios {
+    margin-top: 50px;
+    border-top: 1px solid #ccc;
+    padding-top: 30px;
+}
+
+#comentarios h2 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    color: #2e7d32;
+}
+
+.form-comentario textarea {
+    width: 100%;
+    resize: vertical;
+    min-height: 80px;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.form-comentario button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+}
+
+.form-comentario button:hover {
+    background-color: #45a049;
+}
+
+.lista-comentarios {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 30px;
+}
+
+.lista-comentarios li {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 15px;
+}
+
+.avatar {
+    flex-shrink: 0;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.comentario-conteudo {
+    flex-grow: 1;
+}
+
+.comentario-conteudo strong {
+    display: block;
+    font-weight: 600;
+    margin-bottom: -30px;
+    color: #2e7d32;
+}
+
+.comentario-conteudo time {
+    font-size: 0.85rem;
+    color: #666;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.comentario-conteudo p {
+    white-space: pre-line;
+    font-size: 1rem;
+    line-height: 1.4;
+    margin: 0;
+}

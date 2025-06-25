@@ -1,0 +1,150 @@
+/* Garante que o body ocupe 100% da altura da tela */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: #deffca;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #000;
+}
+
+/* HEADER igual ao portal, altura fixa 80px */
+.main-header {
+  background: #a0cfa0;
+  height: 80px;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  box-sizing: border-box;
+}
+
+.logo-icon {
+  width: 40px;
+  margin-right: 10px;
+}
+
+.logo-text {
+  height: 40px;
+}
+
+.header-buttons a {
+  color: white;
+  text-decoration: none;
+  border: 2px solid white;
+  padding: 6px 12px;
+  border-radius: 5px;
+  margin-left: 15px;
+  font-weight: 600;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.header-buttons a:hover {
+  background-color: white;
+  color: #48c078;
+}
+
+/* Main ocupa espaço restante e centraliza conteúdo */
+main {
+  flex: 1;
+  max-width: 400px;
+  margin: 100px auto 40px;
+  padding: 0 20px;
+  text-align: center;
+}
+
+/* Form simples, coluna com espaçamento */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  text-align: left;
+}
+
+label {
+  font-weight: 600;
+  color: #1b5e20;
+}
+
+input[type="email"],
+input[type="password"] {
+  padding: 10px;
+  border: 2px solid #a0cfa0;
+  border-radius: 5px;
+  font-size: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+  border-color: #48c078;
+  outline: none;
+}
+
+button.btn-outline {
+  padding: 10px;
+  background: transparent;
+  border: 2px solid #48c078;
+  color: #48c078;
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+  width: 100%;
+}
+
+button.btn-outline:hover {
+  background-color: #48c078;
+  color: white;
+}
+
+/* Link do cadastro */
+main p {
+  margin-top: 20px;
+  font-size: 0.95rem;
+  color: #1b5e20;
+}
+
+main p a {
+  color: #48c078;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+main p a:hover {
+  text-decoration: underline;
+}
+
+/* Footer fixado ao fim */
+footer.main-footer {
+  background-color: #a0cfa0;
+  color: white;
+  text-align: center;
+  padding: 15px 10px;
+  font-size: 0.9rem;
+  margin-top: auto;
+}
+
+.main-footer .creators {
+  font-style: italic;
+  font-size: 0.8rem;
+  opacity: 0.8;
+  margin-top: 5px;
+}
+
+.icon-login {
+  width: 100px;       /* metade de 60px */
+  height: 100px;      /* mantendo proporção */
+  margin-bottom: -10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -10px; /* sobe 10 pixels */
+}

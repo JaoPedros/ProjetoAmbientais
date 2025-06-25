@@ -1,0 +1,171 @@
+/* Garante que o body ocupe 100% da altura da tela */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: #deffca;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #000;
+}
+
+/* HEADER igual ao login e ao portal */
+.main-header {
+  background: #a0cfa0;
+  height: 80px;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  box-sizing: border-box;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-icon {
+  width: 40px;
+  margin-right: 10px;
+}
+
+.logo-text {
+  height: 40px;
+}
+
+.header-buttons a {
+  color: white;
+  text-decoration: none;
+  border: 2px solid white;
+  padding: 6px 12px;
+  border-radius: 5px;
+  margin-left: 15px;
+  font-weight: 600;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.header-buttons a:hover {
+  background-color: white;
+  color: #48c078;
+}
+
+/* MAIN centraliza e limita largura do formulário */
+main {
+  flex: 1;
+  max-width: 800px;
+  margin: 100px auto 40px;
+  padding: 0 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Formulário de cadastro com campos centralizados */
+.form-cadastro {
+  background-color: transparent;
+  padding: 0;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  text-align: left;
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Título - subindo só ele */
+.form-cadastro h2, /* se tiver h2 dentro do form */
+h2 {  /* para garantir o título no main */
+  text-align: center;
+  color: #1b5e20;
+  margin-top: -20px;   /* Reduzi a margem superior para subir */
+  margin-bottom: 5px; /* Espaço reduzido abaixo do título */
+  width: 100%;
+}
+
+/* Agrupamento de cada campo */
+.form-cadastro .campo {
+  width: 100%;
+}
+
+/* Labels */
+.form-cadastro label {
+  font-weight: 600;
+  color: #1b5e20;
+  display: block;
+  margin-bottom: -15px;
+}
+
+/* Inputs */
+.form-cadastro input {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #a0cfa0;
+  border-radius: 5px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.form-cadastro input:focus {
+  border-color: #48c078;
+  outline: none;
+}
+
+/* Botão principal centralizado abaixo dos campos */
+.form-cadastro button {
+  width: 200px;
+  margin-top: 10px;
+  background-color: #a0cfa0;
+  color: white;
+  font-size: 1rem;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 700;
+  transition: background-color 0.3s;
+}
+
+.form-cadastro button:hover {
+  background-color: #85b885;
+}
+
+/* FOOTER igual ao do login */
+footer.main-footer {
+  background-color: #a0cfa0;
+  color: white;
+  text-align: center;
+  padding: 15px 10px;
+  font-size: 0.9rem;
+  margin-top: auto;
+}
+
+.main-footer .creators {
+  font-style: italic;
+  font-size: 0.8rem;
+  opacity: 0.8;
+  margin-top: 5px;
+}
+
+/* Ícone opcional de topo */
+.icon-login {
+  width: 100px;
+  height: 100px;
+  display: block;
+  margin: -10px auto 20px auto;
+}
+
+/* Responsivo: empilha tudo */
+@media (max-width: 600px) {
+  .form-cadastro {
+    max-width: 90%;
+  }
+}

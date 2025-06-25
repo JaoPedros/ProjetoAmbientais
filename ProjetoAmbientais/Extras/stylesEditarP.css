@@ -1,0 +1,198 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: #deffca;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #000;
+  min-height: 100vh;
+}
+
+/* HEADER */
+.main-header {
+  background: #a0cfa0;
+  height: 80px;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  box-sizing: border-box;
+}
+
+.logo-icon {
+  width: 40px;
+  margin-right: 10px;
+}
+
+.logo-text {
+  height: 40px;
+}
+
+.header-buttons a {
+  color: white;
+  text-decoration: none;
+  border: 2px solid white;
+  padding: 6px 12px;
+  border-radius: 5px;
+  margin-left: 15px;
+  font-weight: 600;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.header-buttons a:hover {
+  background-color: white;
+  color: #48c078;
+}
+
+/* Banner e Foto do Perfil - estilo igual dashboard */
+.perfil-banner {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.espaco-banner {
+  position: relative;
+  width: 95%;
+  max-width: 1200px;
+  height: 280px;
+  background-color: transparent;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 2px dashed #a0cfa0;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 80px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  overflow: hidden; /* Importante pra evitar vazamento de imagem */
+}
+
+/* Foto de perfil */
+.foto-perfil {
+  position: absolute;
+  bottom: -10px;
+  width: 170px;
+  height: 170px;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 4px solid white;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 10; /* Fica na frente */
+}
+
+/* Formulário */
+.container.form-container {
+  max-width: 600px;
+  margin-bottom: 60px;
+  padding: 0 20px;
+}
+
+h2 {
+  color: #1b5e20;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+textarea.form-control {
+  resize: vertical;
+  min-height: 100px;
+}
+
+/* Botão */
+.btn-primary {
+  background-color: #a0cfa0;
+  border: none;
+  color: #1b5e20;
+  border-radius: 12px;
+  font-weight: 600;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #8cc48c;
+  color: #145214;
+}
+
+/* Alerts */
+.alert {
+  max-width: 600px;
+  margin: 15px auto;
+}
+
+/* Footer */
+.main-footer {
+  background-color: #a0cfa0;
+  color: white;
+  text-align: center;
+  padding: 15px 10px;
+  font-size: 0.9rem;
+  margin-top: auto;
+}
+
+.main-footer .creators {
+  font-style: italic;
+  font-size: 0.8rem;
+  opacity: 0.8;
+  margin-top: 5px;
+}
+
+/* Formulário */
+.container.form-container {
+  max-width: 600px;
+  margin-bottom: 60px;
+  padding: 0 20px;
+  background-color: #c8e6c9;          /* Fundo suave para destacar o form */
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+/* Inputs e textarea */
+.form-control {
+  border-radius: 12px;
+  border: 2px solid #a0cfa0;
+  padding: 8px 12px;
+  font-size: 1rem;
+  color: #1b5e20;
+  transition: border-color 0.3s;
+}
+
+.form-control:focus {
+  border-color: #48c078;
+  outline: none;
+}
+
+/* Alerts */
+.alert {
+  max-width: 600px;
+  margin: 15px auto;
+  padding: 10px 15px;
+  border-radius: 12px;
+  font-weight: 600;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.alert-danger {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
+
+.alert-success {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
